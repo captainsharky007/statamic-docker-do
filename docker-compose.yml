@@ -1,0 +1,8 @@
+version: '3'
+services:
+  web:
+    build: .
+    ports:
+      - "80:80" # Map container port 80 to host machine port 8080
+    volumes:
+      - ./custom.ini:/usr/local/etc/php/conf.d/custom.ini
