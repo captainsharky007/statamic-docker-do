@@ -18,9 +18,11 @@ RUN apt-get install -y \
 
 RUN a2enmod rewrite
 
+ADD . .
+
 WORKDIR /var/www/html
 
-ADD . .
+
 RUN chmod -R 777 site local statamic assets
 
 
