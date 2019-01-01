@@ -5,4 +5,5 @@ services:
     ports:
       - "80:80" # Map container port 80 to host machine port 8080
     volumes:
+      - ".:/var/www/html" #
       - ./custom.ini:/usr/local/etc/php/conf.d/custom.ini
