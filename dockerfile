@@ -20,7 +20,7 @@ RUN a2enmod rewrite
 
 WORKDIR /var/www/html
 
-COPY . .
+ADD . .
 RUN chmod -R 777 site local statamic assets
 
 
